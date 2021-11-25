@@ -1,0 +1,42 @@
+
+
+nav {
+    width: 80%;
+    margin: auto;
+    min-height: 10vh;
+    padding: 3rem 0rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    ul {
+        display: flex;
+        justify-content: space-between;
+        flex: 1;
+        align-items: center;
+        list-style: none;
+    }
+    #logo{
+        //!VERVANG DIT MET EEN LOGO
+        flex: 1;
+        // position: relative;
+        // &::after {
+        //     content: "";
+        //     position: absolute;
+        //     top: 0;
+        //     left: 0;
+        //     width: 28rem;
+        //     height: 6rem;
+        //     background: linear-gradient(to right,#094bad,#ff66c4);
+        //     border-radius: 3rem;
+        //     transform: translate(-10%, -20%);
+        //     mix-blend-mode: screen;
+        // }
+    }
+    .afspraak {
+        color: black;
+        background: linear-gradient(to right,#094bad,#ff66c4);
+        padding: 1rem 2rem;
+        border-radius: 3rem;
+    }
+}
