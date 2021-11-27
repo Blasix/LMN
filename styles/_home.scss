@@ -1,7 +1,7 @@
 
 
 nav {
-    width: 80%;
+    width: 90%;
     margin: auto;
     min-height: 10vh;
     padding: 3rem 0rem;
@@ -15,23 +15,12 @@ nav {
         flex: 1;
         align-items: center;
         list-style: none;
+        li {
+            padding: 0rem 2rem;
+        }
     }
     #logo{
-        //!VERVANG DIT MET EEN LOGO
-        flex: 1;
-        // position: relative;
-        // &::after {
-        //     content: "";
-        //     position: absolute;
-        //     top: 0;
-        //     left: 0;
-        //     width: 28rem;
-        //     height: 6rem;
-        //     background: linear-gradient(to right,#094bad,#ff66c4);
-        //     border-radius: 3rem;
-        //     transform: translate(-10%, -20%);
-        //     mix-blend-mode: screen;
-        // }
+        flex: 1.2;
     }
     .afspraak {
         color: black;
@@ -40,3 +29,52 @@ nav {
         border-radius: 3rem;
     }
 }
+.homepage {
+    display: grid;
+    min-height: 80vh;
+    grid-template-columns: 5% 1fr 5% 1fr 5%;
+    grid-template-rows: 0.1fr 0.1fr 1fr;
+    
+    .title1,.title2 {
+        grid-row: 2/3;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color:#8058b8;
+    }
+
+    .title1 {
+        grid-column: 2/3;
+    }
+    .title2 {
+        grid-column: 4/5;
+    }
+
+    .info1,.info2 {
+        grid-row: 3/4;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+    
+
+    .info1 {
+        grid-column: 2/3;
+    }
+    .info2 {
+        grid-column: 4/5;
+    }
+    
+    img {
+        grid-row: 3/4;
+        grid-column: 4/5;
+        
+    }
+}
+
+
+#Hoofd {
+    border-radius: 3rem;
+}
+    

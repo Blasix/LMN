@@ -20,7 +20,7 @@ h1 {
 }
 
 h2 {
-  font-size: 8rem;
+  font-size: 5rem;
 }
 
 h3 {
@@ -45,7 +45,7 @@ a {
 }
 
 nav {
-  width: 80%;
+  width: 90%;
   margin: auto;
   min-height: 10vh;
   padding: 3rem 0rem;
@@ -76,10 +76,14 @@ nav ul {
   list-style: none;
 }
 
+nav ul li {
+  padding: 0rem 2rem;
+}
+
 nav #logo {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  -webkit-box-flex: 1.2;
+      -ms-flex: 1.2;
+          flex: 1.2;
 }
 
 nav .afspraak {
@@ -87,6 +91,82 @@ nav .afspraak {
   background: -webkit-gradient(linear, left top, right top, from(#094bad), to(#ff66c4));
   background: linear-gradient(to right, #094bad, #ff66c4);
   padding: 1rem 2rem;
+  border-radius: 3rem;
+}
+
+.homepage {
+  display: -ms-grid;
+  display: grid;
+  min-height: 80vh;
+  -ms-grid-columns: 5% 1fr 5% 1fr 5%;
+      grid-template-columns: 5% 1fr 5% 1fr 5%;
+  -ms-grid-rows: 0.1fr 0.1fr 1fr;
+      grid-template-rows: 0.1fr 0.1fr 1fr;
+}
+
+.homepage .title1, .homepage .title2 {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #8058b8;
+}
+
+.homepage .title1 {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+}
+
+.homepage .title2 {
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 1;
+  grid-column: 4/5;
+}
+
+.homepage .info1, .homepage .info2 {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3/4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+.homepage .info1 {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+}
+
+.homepage .info2 {
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 1;
+  grid-column: 4/5;
+}
+
+.homepage img {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3/4;
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 1;
+  grid-column: 4/5;
+}
+
+#Hoofd {
   border-radius: 3rem;
 }
 
